@@ -1,7 +1,7 @@
-import Counter from "./components/Counter/Counter";
-import SearchFormComponent from "./components/SearchForm/SearchForm";
-import GenreSelect from "./components/GenreSelect/GenreSelect";
-import { GenresList } from "./utils";
+import Counter from "./Task1/Counter";
+import SearchFormComponent from "./Task1/SearchForm/SearchForm";
+import GenreSelect from "./Task1/GenreSelect/GenreSelect";
+import { GenresList } from "./Task1/utils";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <label>Search Form</label>
         <SearchFormComponent
           searchQuery={"Avengers"} // initial value
-          onChange={(search) => console.log("Search: ", search)}
+          onSearch={(search) => console.log("Search: ", search)}
         />
       </div>
       <div className="genre">
@@ -22,7 +22,7 @@ function App() {
         <GenreSelect
           genreList={GenresList}
           currentSelected={"HORROR"} // initial value
-          onChange={(selected) => console.log("Genre: ", selected)}
+          onSelect={(selected) => console.log("Genre: ", selected)}
         />
       </div>
     </section>
