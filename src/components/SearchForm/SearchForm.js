@@ -2,25 +2,31 @@ import React from "react";
 import { useRef } from "react";
 import { SearchFormStyled } from "./SearchForm.styled";
 
-const SearchFormComponent = ({ searchQuery, onSearch }) => {
+const SearchFormComponent = ({ searchQuery, onChange }) => {
   const { Input, Content, Button } = SearchFormStyled;
   const refInput = useRef("");
 
   const keyPress = (e) => {
     if (e.keyCode === 13) {
-      onSearch(e.target.value);
+      onChange(e.target.value);
     }
   };
 
   return (
     <Content>
       <Input
+        aria-label="search-form"
         ref={refInput}
         defaultValue={searchQuery}
         onKeyDown={keyPress}
         placeholder={"What do you want to watch?"}
       />
-      <Button onClick={() => onSearch(refInput.current.value)}>SEARCH</Button>
+      <Button
+        aria-label="btn-search"
+        onClick={() => onChange(refInput.current.value)}
+      >
+        SEARCH
+      </Button>
     </Content>
   );
 };
