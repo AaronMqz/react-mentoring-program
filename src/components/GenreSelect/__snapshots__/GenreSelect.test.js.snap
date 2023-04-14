@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GenreSelect Tests: 4. Snapshot renders correctly 1`] = `
+<div
+  className="sc-beqWaB bqHPCd"
+>
+  <div
+    className="sc-gueYoa kerPiR"
+  >
+    <label
+      aria-label="genre-list"
+      className="sc-dmqHEX hZEnJb"
+      id="ALL"
+      onClick={[Function]}
+    >
+      ALL
+    </label>
+    <label
+      aria-label="genre-list"
+      className="sc-dmqHEX hZEnJb"
+      id="DOCUMENTARY"
+      onClick={[Function]}
+    >
+      DOCUMENTARY
+    </label>
+    <label
+      aria-label="genre-list"
+      className="sc-dmqHEX hZEnJb"
+      id="COMDEY"
+      onClick={[Function]}
+    >
+      COMDEY
+    </label>
+    <label
+      aria-label="genre-list"
+      className="sc-dmqHEX hZEnJb"
+      id="HORROR"
+      onClick={[Function]}
+    >
+      HORROR
+    </label>
+    <label
+      aria-label="genre-list"
+      className="sc-dmqHEX hZEnJb"
+      id="CRIME"
+      onClick={[Function]}
+    >
+      CRIME
+    </label>
+  </div>
+</div>
+`;

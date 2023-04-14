@@ -1,7 +1,11 @@
+import { GenresList, movieMockData } from "./utils";
+
 import Counter from "./components/Counter/Counter";
 import SearchFormComponent from "./components/SearchForm/SearchForm";
 import GenreSelect from "./components/GenreSelect/GenreSelect";
-import { GenresList } from "./utils";
+import MovieTile from "./components/MovieTile/MovieTile";
+import MovieDetails from "./components/MovieDetails/MovieDetails";
+import SortControl from "./components/SortControl/SortControl";
 
 function App() {
   return (
@@ -23,6 +27,18 @@ function App() {
           genreList={GenresList}
           currentSelected={"HORROR"} // initial value
           onChange={(selected) => console.log("Genre: ", selected)}
+        />
+      </div>
+      <div>
+        <MovieTile movie={movieMockData} />
+      </div>
+      <div>
+        <MovieDetails movie={movieMockData} />
+      </div>
+      <div>
+        <SortControl
+          current={"title"}
+          onChange={(selected) => console.log("Sort by: ", selected)}
         />
       </div>
     </section>

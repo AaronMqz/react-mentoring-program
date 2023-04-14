@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchForm Tests: 4. Snapshot renders correctly 1`] = `
+<div
+  className="sc-beqWaB bmzUFi"
+>
+  <input
+    aria-label="search-form"
+    className="sc-gueYoa fAWLyw"
+    defaultValue="Avengers"
+    onKeyDown={[Function]}
+    placeholder="What do you want to watch?"
+  />
+  <div
+    aria-label="btn-search"
+    className="sc-dmqHEX fNKJaz"
+    onClick={[Function]}
+  >
+    SEARCH
+  </div>
+</div>
+`;

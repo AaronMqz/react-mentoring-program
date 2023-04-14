@@ -1,6 +1,4 @@
-export const GenresList = ["ALL", "DOCUMENTARY", "COMDEY", "HORROR", "CRIME"];
-
-export const movieMockData = {
+export const mockData = {
   image_url: "https://m.media-amazon.com/images/I/71eHZFw+GlL._AC_SY879_.jpg",
   movie_name: "Avengers: Inifinity War",
   release_year: "2018",

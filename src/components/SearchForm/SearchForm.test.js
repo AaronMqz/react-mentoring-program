@@ -1,10 +1,12 @@
 import React from "react";
 import { render, screen, cleanup, fireEvent } from "@testing-library/react";
 import SearchFormComponent from "./SearchForm";
+import renderer from "react-test-renderer";
 
 afterEach(cleanup);
 
 describe("SearchForm Tests:", () => {
+  console.log("searForm");
   const searchFormSetup = (initialValue, mockOnClick) => {
     const utils = render(
       <SearchFormComponent
@@ -45,5 +47,12 @@ describe("SearchForm Tests:", () => {
     fireEvent.keyDown(input, { keyCode: 13 });
 
     expect(mockOnClick).toHaveBeenCalledWith("avenger 2");
+  });
+
+  it("4. Snapshot renders correctly", () => {
+    const tree = renderer
+      .create(<SearchFormComponent searchQuery={"Avengers"} />)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });

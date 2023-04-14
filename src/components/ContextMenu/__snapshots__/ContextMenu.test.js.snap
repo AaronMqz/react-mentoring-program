@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContextMenu Tests: 2. Snapshot renders correctly 1`] = `
+<div
+  className="sc-beqWaB cqYDjH"
+>
+  <div
+    className="sc-gueYoa HYHmj"
+  >
+    Edit
+  </div>
+  <div
+    className="sc-gueYoa HYHmj"
+  >
+    Delete
+  </div>
+</div>
+`;

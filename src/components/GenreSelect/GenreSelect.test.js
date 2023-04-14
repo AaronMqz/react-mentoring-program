@@ -2,6 +2,7 @@ import React from "react";
 import { render, screen, cleanup, fireEvent } from "@testing-library/react";
 import GenreSelect from "./GenreSelect";
 import { GenresList } from "../../utils";
+import renderer from "react-test-renderer";
 
 afterEach(cleanup);
 
@@ -35,5 +36,12 @@ describe("GenreSelect Tests:", () => {
     fireEvent.click(element);
 
     expect(mockOnClick).toHaveBeenCalledWith("CRIME");
+  });
+
+  it("4. Snapshot renders correctly", () => {
+    const tree = renderer
+      .create(<GenreSelect genreList={GenresList} />)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });

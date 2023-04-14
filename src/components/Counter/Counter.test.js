@@ -1,6 +1,7 @@
 import React from "react";
 import { render, screen, cleanup, fireEvent } from "@testing-library/react";
 import Counter from "./Counter";
+import renderer from "react-test-renderer";
 
 afterEach(cleanup);
 
@@ -23,5 +24,10 @@ describe("Counter Tests:", () => {
     const button = screen.getByText("Increment");
     fireEvent.click(button);
     expect(screen.getByText(101)).toBeInTheDocument();
+  });
+
+  it("4. Snapshot renders correctly", () => {
+    const tree = renderer.create(<Counter initialValue={100} />).toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });
