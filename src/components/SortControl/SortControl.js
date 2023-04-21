@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import SortControl from "./SortControl.styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons";
-import { SortByOptions } from "../../utils/mockData";
+import { SortByOptions } from "../../utils";
 
 const SortControlComponent = ({ current, onChange }) => {
   const [showList, setShowList] = useState(false);

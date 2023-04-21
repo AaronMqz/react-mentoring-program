@@ -1,5 +1,5 @@
 import DetailComponent from "./MovieDetails";
-import { mockData } from "../../utils/mockData";
+import { dummyMovieState } from "../../utils";
 
 export default {
   title: "Example/MovieDetail",
@@ -9,6 +9,6 @@ export default {
 
 export const Default = {
   args: {
-    movie: mockData,
+    movie: dummyMovieState,
   },
 };

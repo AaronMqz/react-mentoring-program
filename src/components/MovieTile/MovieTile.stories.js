@@ -1,5 +1,5 @@
 import MovieTile from "./MovieTile";
-import { mockData } from "../../utils/mockData";
+import { dummyMovieState } from "../../utils";
 
 export default {
   title: "Example/MovieTile",
@@ -10,6 +10,6 @@ export default {
 
 export const Default = {
   args: {
-    movie: mockData,
+    movie: dummyMovieState,
   },
 };

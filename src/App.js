@@ -1,4 +1,4 @@
-import { GenresList, movieMockData } from "./utils";
+import { GenresList, dummyMovieState } from "./utils";
 
 import Counter from "./components/Counter/Counter";
 import SearchFormComponent from "./components/SearchForm/SearchForm";
@@ -6,6 +6,10 @@ import GenreSelect from "./components/GenreSelect/GenreSelect";
 import MovieTile from "./components/MovieTile/MovieTile";
 import MovieDetails from "./components/MovieDetails/MovieDetails";
 import SortControl from "./components/SortControl/SortControl";
+
+import DialogComponent from "./components/Dialog/Dialog";
+import MovieForm from "./components/MovieForm/MovieForm";
+import { initialMovieState } from "./utils";
 
 function App() {
   return (
@@ -30,16 +34,26 @@ function App() {
         />
       </div>
       <div>
-        <MovieTile movie={movieMockData} />
+        <MovieTile movie={dummyMovieState} />
       </div>
       <div>
-        <MovieDetails movie={movieMockData} />
+        <MovieDetails movie={dummyMovieState} />
       </div>
       <div>
         <SortControl
           current={"title"}
           onChange={(selected) => console.log("Sort by: ", selected)}
         />
+      </div>
+      <div>
+        <DialogComponent>
+          <MovieForm.Default
+            movie={initialMovieState}
+            titleForm="TEST"
+            handleSubmit={() => console.log("Submit")}
+            handleReset={() => console.log("Reset")}
+          />
+        </DialogComponent>
       </div>
     </section>
   );
