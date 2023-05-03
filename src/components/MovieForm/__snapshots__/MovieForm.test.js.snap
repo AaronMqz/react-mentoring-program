@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieForm Tests: 2. Snapshot renders correctly 1`] = `
+<div
+  className="sc-beqWaB bTkdGv"
+>
+  <label
+    className="sc-eDDNvR gfVLRw"
+  >
+    DEFAULT TITLE
+  </label>
+  <div
+    className="sc-gueYoa eZFNTp"
+  >
+    <div
+      className="sc-dmqHEX bWJwCF"
+    >
+      <label
+        className="sc-gLDzan htTcgQ"
+      >
+        TITLE
+      </label>
+      <input
+        className="sc-jTrPJq eGHqHK"
+        name="title"
+        onChange={[Function]}
+        placeholder="Title"
+        type="text"
+        value="Avengers: Inifinity War"
+      />
+    </div>
+    <div
+      className="sc-dmqHEX bWJwCF"
+    >
+      <label
+        className="sc-gLDzan htTcgQ"
+      >
+        RELEASE DATE
+      </label>
+      <input
+        className="sc-jTrPJq eGHqHK"
+        name="release_date"
+        onChange={[Function]}
+        placeholder="Release Date"
+        type="date"
+      />
+      <span
+        className="sc-qRumB iUSyto"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-calendar-days "
+          color="#f64261"
+          data-icon="calendar-days"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-gueYoa eZFNTp"
+  >
+    <div
+      className="sc-dmqHEX bWJwCF"
+    >
+      <label
+        className="sc-gLDzan htTcgQ"
+      >
+        MOVIE URL
+      </label>
+      <input
+        className="sc-jTrPJq eGHqHK"
+        name="image_url"
+        onChange={[Function]}
+        placeholder="https://"
+        type="text"
+        value="https://m.media-amazon.com/images/I/71eHZFw+GlL._AC_SY879_.jpg"
+      />
+    </div>
+    <div
+      className="sc-dmqHEX bWJwCF"
+    >
+      <label
+        className="sc-gLDzan htTcgQ"
+      >
+        RATING
+      </label>
+      <input
+        className="sc-jTrPJq eGHqHK"
+        name="rating"
+        onChange={[Function]}
+        placeholder="Rating"
+        type="text"
+        value="8.4"
+      />
+    </div>
+  </div>
+  <div
+    className="sc-gueYoa eZFNTp"
+  >
+    <div
+      className="sc-dmqHEX bWJwCF"
+    >
+      <label
+        className="sc-gLDzan htTcgQ"
+      >
+        GENRE
+      </label>
+      <div
+        className="sc-irTswW eqsVTd"
+      >
+        <div
+          className="sc-csCMJt CoLXb"
+          onClick={[Function]}
+        >
+          Action, Adventure
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-caret-down "
+            color="#f64261"
+            data-icon="caret-down"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 320 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-dmqHEX bWJwCF"
+    >
+      <label
+        className="sc-gLDzan htTcgQ"
+      >
+        RUNTIME
+      </label>
+      <input
+        className="sc-jTrPJq eGHqHK"
+        name="duration"
+        onChange={[Function]}
+        placeholder="Minutes"
+        value="2h 29min"
+      />
+    </div>
+  </div>
+  <div
+    className="sc-gueYoa eZFNTp"
+  >
+    <div
+      className="sc-dmqHEX bWJwCF"
+    >
+      <label
+        className="sc-gLDzan htTcgQ"
+      >
+        OVERVIEW
+      </label>
+      <textarea
+        className="sc-fsQiph iYXtjn"
+        name="description"
+        onChange={[Function]}
+        placeholder="Movie Description"
+        value="As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment, the fate of Earth and existence has never been more uncertain."
+      />
+    </div>
+  </div>
+  <div
+    className="sc-hLseeU cTNrkv"
+  >
+    <div
+      className="sc-jsMahE sc-kFuwaP dKEZuS fSQRFv"
+    >
+      RESET
+    </div>
+    <div
+      className="sc-jsMahE dKEZuS"
+    >
+      SUBMIT
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,24 @@
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label-counter {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.button-counter {
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+  background: #f65261;
+  width: 200px;
+}
